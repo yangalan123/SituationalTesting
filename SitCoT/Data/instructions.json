@@ -1,0 +1,16 @@
+{
+  "instructions": [
+    {
+      "text": "We now are playing a box-opening game. As an agent, your task is to keep track of logical states. We will give you initial states, several actions and you should update logical states accordingly. ",
+      "domain": "SimpleBoxOpening",
+      "task": "NormalContext",
+      "ID": "NC-game-1"
+    },
+    {
+      "text": "As an agent, you need to find the way to go out of this quest. Currently, there are several boxes in front of you and there is a key inside each box. You can use only one of these keys to open the door and finish this quest. ",
+      "domain": "SimpleBoxOpening",
+      "task": "NormalContext",
+      "ID": "NC-game-2"
+    }
+  ]
+}
