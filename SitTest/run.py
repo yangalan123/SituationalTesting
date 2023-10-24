@@ -81,7 +81,7 @@ def parse_args():
     parser.add_argument("--incomplete_sup_state_sample_ratio", type=float, default=0.5,
                         help="probability of dropping a logic state in the incomplete_supervision scenario", )
     parser.add_argument("--with_incomplete_query", type=str2bool, nargs='?', const=True, default=False,
-                        help="whether query for incomplete state set in testing tim")
+                        help="whether query for incomplete state set in testing time")
     parser.add_argument("--instruction_counterfactual_nl", type=str2bool, nargs='?', const=True, default=False,
                         help="whether add counterfactual NL in the instruction part")
     parser.add_argument("--instruction_counterfactual_logic", type=str2bool, nargs='?', const=True, default=False,
