@@ -10,11 +10,11 @@ from time import sleep
 import loguru
 import numpy as np
 import torch
-from SitCoT.Data.SimpleBoxOpeningEnv.action_templates import get_action_templates
-from SitCoT.Data.SimpleBoxOpeningEnv.envs import generateSimpleBoxOpenningSample
-from SitCoT.Data.SimpleBoxOpeningEnv.instruction_gen_pipeline import generate_initial_instruction_pipeline
-from SitCoT.Data.SimpleBoxOpeningEnv.logic_functor import logic_functor, generate_random_functor
-from SitCoT.utils import (
+from SitTest.Data.SimpleBoxOpeningEnv.action_templates import get_action_templates
+from SitTest.Data.SimpleBoxOpeningEnv.envs import generateSimpleBoxOpenningSample
+from SitTest.Data.SimpleBoxOpeningEnv.instruction_gen_pipeline import generate_initial_instruction_pipeline
+from SitTest.Data.SimpleBoxOpeningEnv.logic_functor import logic_functor, generate_random_functor
+from SitTest.utils import (
     process_box_key_reference,
     process_gt_answer_response,
     generateRandomWord,
@@ -23,8 +23,8 @@ from SitCoT.utils import (
 )
 from tqdm import trange
 
-from APIServer import OpenAIServer
-from Const import (pricing)
+from SitTest.APIServer import OpenAIServer
+from SitTest.Const import (pricing)
 
 
 def str2bool(v):
@@ -51,7 +51,7 @@ def ApplyActionPerturbation(step_i, args, action_seqs, corpus):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="SitCoT Testing Environment Setting.")
+    parser = argparse.ArgumentParser(description="SitTest Testing Environment Setting.")
     parser.add_argument("--seed", type=int, default=1111, help="random_seed")
     parser.add_argument("--num_box", type=int, default=20, help="number of boxes", required=True)
     parser.add_argument("--num_key", type=int, default=20, help="number of keys", required=True)

@@ -8,7 +8,7 @@ import traceback
 
 import loguru
 import numpy as np
-from SitCoT.utils import (
+from SitTest.utils import (
     process_gt_answer_response,
     extract_states
 )

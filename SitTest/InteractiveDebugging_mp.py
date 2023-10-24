@@ -10,7 +10,7 @@ from functools import partial
 
 import loguru
 import numpy as np
-from SitCoT.utils import (
+from SitTest.utils import (
     process_gt_answer_response,
     compose_chat_style_wordload_from_normal_workload,
     extract_states

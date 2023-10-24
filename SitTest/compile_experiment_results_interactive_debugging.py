@@ -7,7 +7,7 @@ import loguru
 import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
 import numpy as np
-from SitCoT.utils import (
+from SitTest.utils import (
     process_gt_answer_response,
     check_error_type,
     ERROR_TYPES

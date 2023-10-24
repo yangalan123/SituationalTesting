@@ -7,7 +7,7 @@ import pickle
 import shutil
 
 import loguru
-from SitCoT.utils import process_state_representation
+from SitTest.utils import process_state_representation
 
 if __name__ == '__main__':
     logger = loguru.logger

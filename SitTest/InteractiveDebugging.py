@@ -7,18 +7,19 @@ import random
 
 import loguru
 import numpy as np
-from SitCoT.utils import (
+from SitTest.utils import (
     process_gt_answer_response,
     get_answer_from_response,
+    get_gpt_tokenizer,
+    compose_answer_from_status,
 )
 from tqdm import tqdm
 
-from APIServer import OpenAIServer
-from Const import pricing
-from Data.SimpleBoxOpeningEnv.action_templates import extract_arguments_from_single_action
-from Data.SimpleBoxOpeningEnv.instruction_gen_pipeline import extract_num_boxes_and_num_keys, \
+from SitTest.APIServer import OpenAIServer
+from SitTest.Const import pricing
+from SitTest.Data.SimpleBoxOpeningEnv.action_templates import extract_arguments_from_single_action
+from SitTest.Data.SimpleBoxOpeningEnv.instruction_gen_pipeline import extract_num_boxes_and_num_keys, \
     extract_logic_functor_for_box_and_keys
-from utils import get_answer_from_response, get_gpt_tokenizer, compose_answer_from_status
 
 
 def parse_args():
