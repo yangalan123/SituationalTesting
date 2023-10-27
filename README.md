@@ -1,5 +1,5 @@
 # SituationalTesting
-Codebase for the EMNLP 2023 paper "Can You Follow Me? Testing Situational Understanding for ChatGPT"
+Codebase for the EMNLP 2023 paper ["Can You Follow Me? Testing Situational Understanding for ChatGPT"](https://arxiv.org/abs/2310.16135)
 
 Author: Chenghao Yang (yangalan1996@gmail.com) (University of Chicago)
 
